@@ -1,4 +1,4 @@
-<img src='https://raw.githubusercontent.com/alisamalb/olives/main/logo.png?token=ASQ7LJZQ4D7XUTT7W7UJYBLBPGFNA' width="100%"></img>
+![alt text](https://github.com/alisamalb/olives/blob/main/logo.png?raw=true)
 
 Gō potential for you Martini3 simulations.
 
