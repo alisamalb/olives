@@ -53,7 +53,7 @@ def write_harmonic_bonds(structure_table,contacts_table,vsharm,molname):
 	for i in range(len(contacts_table)):
 		bead1=beads["Index"].tolist()[residues.index(contacts_table["I1"][i])]
 		bead2=beads["Index"].tolist()[residues.index(contacts_table["I2"][i])]
-		output.write(f"{bead1} {bead2} 1 1250 ;{molname}_{contacts_table['I1'][i]} {molname}_{contacts_table['I2'][i]} \n")
+		output.write(f"{bead1} {bead2} 1 {round(contacts_table['dCA'][i],4)}  1250 ;{molname}_{contacts_table['I1'][i]} {molname}_{contacts_table['I2'][i]} \n")
 def write_exclusion(structure_table,contacts_table,exclusion,molname):
 	output=open(f"{molname}_{exclusion}.itp","w")
 	residues=structure_table[structure_table["Bead"]=='BB']["Number"].tolist()
